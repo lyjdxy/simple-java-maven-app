@@ -8,7 +8,6 @@ pipeline {
         stage('Build') {
             steps {
 	    	sh 'mvn -v'
-	    	sh 'docker ps'
 	    	sh 'ping -c 4 199.232.192.215'
             }
         }
