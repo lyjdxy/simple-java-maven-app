@@ -9,8 +9,6 @@ pipeline {
         stage('Build') {
             steps {
 	    	sh 'mvn -v'
-	    	sh 'which maven'
-	    	sh 'which mvn'
 	    	sh 'ping repo.maven.apache.org'
                 sh 'mvn -B -X -DskipTests clean package'
             }
